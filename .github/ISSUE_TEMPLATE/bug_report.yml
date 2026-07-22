@@ -1,0 +1,53 @@
+name: Bug report
+description: Report something that is broken or behaving unexpectedly.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for helping improve Vibe in Color. Please include enough detail to reproduce the problem.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen instead.
+      placeholder: A clear, concise description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest sequence that reliably produces the problem.
+      placeholder: |
+        1. Open…
+        2. Choose…
+        3. See…
+    validations:
+      required: true
+  - type: input
+    id: vibe_version
+    attributes:
+      label: Vibe in Color version
+      placeholder: 0.1.1
+    validations:
+      required: true
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS version and Mac model
+      placeholder: macOS 15.5, MacBook Pro with M3 Pro
+    validations:
+      required: true
+  - type: input
+    id: chatgpt_version
+    attributes:
+      label: ChatGPT macOS version and build
+      description: Include this when the problem involves copying or importing a theme.
+      placeholder: 26.715.72359, build 5718
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Add screenshots, logs, or anything else that may help.

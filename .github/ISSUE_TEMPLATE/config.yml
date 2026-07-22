@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Vibe in Color support
+    url: https://ulvigu.github.io/vibeincolor-downloads/support.html
+    about: Installation help, import instructions, compatibility details, and feedback routes.
+  - name: Download the latest release
+    url: https://github.com/ulvigu/vibeincolor-downloads/releases/latest
+    about: Get the current signed and notarized installers.

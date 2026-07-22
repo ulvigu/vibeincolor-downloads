@@ -1,0 +1,33 @@
+name: Support request
+description: Ask for help with installation, import, compatibility, or another product question.
+title: "[Support] "
+labels:
+  - support
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: How can I help?
+      description: Describe what you are trying to do and where you got stuck.
+    validations:
+      required: true
+  - type: input
+    id: vibe_version
+    attributes:
+      label: Vibe in Color version
+      placeholder: 0.1.1
+  - type: input
+    id: macos_version
+    attributes:
+      label: macOS version
+      placeholder: macOS 15.5
+  - type: input
+    id: chatgpt_version
+    attributes:
+      label: ChatGPT macOS version and build
+      placeholder: 26.715.72359, build 5718
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add steps, screenshots, or other details that may help answer the question.

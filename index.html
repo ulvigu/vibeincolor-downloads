@@ -4,20 +4,49 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5eddf">
-  <meta name="description" content="Choose from 200 original themes for the ChatGPT macOS app with Vibe in Color.">
+  <meta name="description" content="Free, Apple-notarized ChatGPT Mac theme app with 200 original Codex themes. Runs locally with no account or analytics.">
+  <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Vibe in Color">
-  <meta property="og:description" content="200 original themes for the ChatGPT macOS app.">
+  <meta property="og:title" content="Vibe in Color — ChatGPT Mac Themes">
+  <meta property="og:description" content="200 original Codex themes for the ChatGPT macOS app. Free, Apple-notarized, and local-only.">
   <meta property="og:url" content="https://ulvigu.github.io/vibeincolor-downloads/">
   <meta property="og:image" content="https://ulvigu.github.io/vibeincolor-downloads/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <title>Vibe in Color — Themes for the ChatGPT macOS App</title>
+  <meta name="twitter:title" content="Vibe in Color — ChatGPT Mac Themes">
+  <meta name="twitter:description" content="200 original Codex themes for the ChatGPT macOS app.">
+  <title>Vibe in Color — ChatGPT Mac Themes and Codex Themes</title>
+  <link rel="canonical" href="https://ulvigu.github.io/vibeincolor-downloads/">
   <link rel="icon" href="assets/VibeInColor.png">
   <link rel="apple-touch-icon" href="assets/VibeInColor.png">
   <link rel="preload" href="assets/VictorMono-Variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Vibe in Color",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "macOS 14 or later on Apple silicon",
+      "softwareVersion": "0.1.1",
+      "description": "A free local-only macOS app for finding, previewing, and importing Codex themes into the ChatGPT macOS app.",
+      "url": "https://ulvigu.github.io/vibeincolor-downloads/",
+      "downloadUrl": "https://github.com/ulvigu/vibeincolor-downloads/releases/latest/download/Vibe-in-Color.dmg",
+      "image": "https://ulvigu.github.io/vibeincolor-downloads/og.png",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Ulvi Guliyev",
+        "url": "https://github.com/ulvigu"
+      }
+    }
+  </script>
   <script type="module">
     const versions = document.querySelectorAll("[data-release-version]");
     fetch("release.json", { cache: "no-store" })
@@ -44,8 +73,9 @@
       <span>Vibe in Color</span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#demo">Watch the demo</a>
-      <a href="#import">Import a theme</a>
+      <a href="#demo">Demo</a>
+      <a href="#themes">Themes</a>
+      <a href="#import">Import</a>
       <a class="nav-download" href="#download">Download</a>
     </nav>
   </header>
@@ -58,7 +88,14 @@
           <span class="hero-title-main">Vibes have<br>colors.</span>
           <span class="hero-title-accent">Find the color<br>that feeds yours.</span>
         </h1>
-        <p class="hero-summary">Choose from 200 original light and dark themes, preview chat and code with your own fonts, then copy your theme into the ChatGPT macOS app.</p>
+        <p class="hero-summary">Choose from 200 original ChatGPT Mac themes, preview chat and code with your own fonts, then copy a complete Codex theme into the ChatGPT macOS app.</p>
+        <p class="trust-line" aria-label="Free, Apple-notarized, no account, runs locally, no analytics">
+          <span>Free</span>
+          <span>Apple-notarized</span>
+          <span>No account</span>
+          <span>Runs locally</span>
+          <span>No analytics</span>
+        </p>
         <div class="hero-actions">
           <a class="button button-primary" href="https://github.com/ulvigu/vibeincolor-downloads/releases/latest/download/Vibe-in-Color.dmg">Download for macOS</a>
           <a class="button button-secondary" href="https://github.com/ulvigu/vibeincolor-downloads/releases/latest/download/Vibe-in-Color-macOS.zip">Download ZIP</a>
@@ -79,9 +116,9 @@
             <dt>10</dt>
             <dd>vibes</dd>
           </div>
-          <div>
-            <dt>Light + dark</dt>
-            <dd>every theme</dd>
+          <div class="fact-wide">
+            <dt>100 light and 100 dark themes</dt>
+            <dd>balanced library</dd>
           </div>
         </dl>
       </div>
@@ -106,26 +143,144 @@
       </div>
     </section>
 
-    <section class="feature-section" aria-labelledby="feature-title">
-      <div class="feature-intro">
-        <p class="eyebrow">Browse · Preview · Copy</p>
-        <h2 id="feature-title">Theme the ChatGPT<br>macOS app.</h2>
+    <section class="theme-section" id="themes" aria-labelledby="theme-title">
+      <div class="theme-heading">
+        <div>
+          <p class="eyebrow">Codex themes · ChatGPT Mac themes</p>
+          <h2 id="theme-title">Ten vibes.<br>Thirty real samples.</h2>
+        </div>
+        <p>Each vibe contains twenty original themes. The library contains 100 light and 100 dark themes. Here are three palettes from every vibe.</p>
       </div>
-      <div class="feature-grid">
-        <article>
-          <span class="feature-number">01 / Vibes</span>
-          <h3>Pick your vibe.</h3>
-          <p>Choose one of ten vibes or search all 200 themes by name, palette, light, or dark.</p>
+
+      <div class="vibe-grid">
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>01 / 10</span>
+            <span class="vibe-variant">Dark</span>
+          </div>
+          <h3>Burning the Midnight Oil</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #08111c; --theme-fg: #98b1c9; --theme-accent: #bd6a2b;"><i aria-hidden="true"></i>Lamplit Latent</li>
+            <li style="--theme-bg: #0d2230; --theme-fg: #c5bc9f; --theme-accent: #9d7da8;"><i aria-hidden="true"></i>Moonlit Model</li>
+            <li style="--theme-bg: #0d233f; --theme-fg: #b9c299; --theme-accent: #419e69;"><i aria-hidden="true"></i>Afterhours Attention</li>
+          </ul>
         </article>
-        <article>
-          <span class="feature-number">02 / Preview</span>
-          <h3>Test the full theme.</h3>
-          <p>Preview chat, prose, code, and diffs together with your preferred interface and code fonts.</p>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>02 / 10</span>
+            <span class="vibe-variant">Dark</span>
+          </div>
+          <h3>Mountain to Climb</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #0d1713; --theme-fg: #c9e8f3; --theme-accent: #e54a12;"><i aria-hidden="true"></i>Grit Planner</li>
+            <li style="--theme-bg: #0d2b1f; --theme-fg: #dff3d8; --theme-accent: #f4664d;"><i aria-hidden="true"></i>Resolve Reasoner</li>
+            <li style="--theme-bg: #1b3225; --theme-fg: #fae7e1; --theme-accent: #b1d862;"><i aria-hidden="true"></i>Tenacity Loss</li>
+          </ul>
         </article>
-        <article>
-          <span class="feature-number">03 / ChatGPT macOS</span>
-          <h3>Copy it to ChatGPT.</h3>
-          <p>Import the complete theme through Appearance settings in the ChatGPT macOS app.</p>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>03 / 10</span>
+            <span class="vibe-variant">Dark</span>
+          </div>
+          <h3>Zen Garden</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #1a231d; --theme-fg: #e7ccef; --theme-accent: #96c882;"><i aria-hidden="true"></i>Stillness Model</li>
+            <li style="--theme-bg: #252c21; --theme-fg: #d7edf4; --theme-accent: #8abbd0;"><i aria-hidden="true"></i>Quiet Latent</li>
+            <li style="--theme-bg: #203c32; --theme-fg: #e3e3f7; --theme-accent: #d5b48f;"><i aria-hidden="true"></i>Gentle Feature</li>
+          </ul>
+        </article>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>04 / 10</span>
+            <span class="vibe-variant">Dark</span>
+          </div>
+          <h3>Locked In</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #000907; --theme-fg: #d4fef3; --theme-accent: #00ffd8;"><i aria-hidden="true"></i>Dialed Attention</li>
+            <li style="--theme-bg: #050814; --theme-fg: #ecf5fe; --theme-accent: #38ebff;"><i aria-hidden="true"></i>Tunnel Context</li>
+            <li style="--theme-bg: #000b21; --theme-fg: #e4f7fd; --theme-accent: #51a9ff;"><i aria-hidden="true"></i>Engrossed Inference</li>
+          </ul>
+        </article>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>05 / 10</span>
+            <span class="vibe-variant">Light</span>
+          </div>
+          <h3>Early Bird</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #fefbf6; --theme-fg: #045c75; --theme-accent: #ab2c04;"><i aria-hidden="true"></i>Daybreak Tuning</li>
+            <li style="--theme-bg: #fdf5ec; --theme-fg: #025299; --theme-accent: #986004;"><i aria-hidden="true"></i>Chipper Autocomplete</li>
+            <li style="--theme-bg: #fcf7d9; --theme-fg: #98263c; --theme-accent: #167f57;"><i aria-hidden="true"></i>Upbeat Model</li>
+          </ul>
+        </article>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>06 / 10</span>
+            <span class="vibe-variant">Light</span>
+          </div>
+          <h3>Clean Slate</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #f8fbfc; --theme-fg: #045985; --theme-accent: #a65980;"><i aria-hidden="true"></i>Blank Baseline</li>
+            <li style="--theme-bg: #edf7f7; --theme-fg: #793974; --theme-accent: #c12525;"><i aria-hidden="true"></i>Reset Residual</li>
+            <li style="--theme-bg: #dbdef0; --theme-fg: #2f407d; --theme-accent: #156f1e;"><i aria-hidden="true"></i>Orderly Graph</li>
+          </ul>
+        </article>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>07 / 10</span>
+            <span class="vibe-variant">Dark</span>
+          </div>
+          <h3>Mad Scientist</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #09030c; --theme-fg: #ffb8ed; --theme-accent: #caff0f;"><i aria-hidden="true"></i>Eureka Adversary</li>
+            <li style="--theme-bg: #1e0420; --theme-fg: #e3ffc7; --theme-accent: #fd43d2;"><i aria-hidden="true"></i>Mutant Model</li>
+            <li style="--theme-bg: #2d0533; --theme-fg: #f5d6ff; --theme-accent: #d0ff37;"><i aria-hidden="true"></i>Unhinged Gradient</li>
+          </ul>
+        </article>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>08 / 10</span>
+            <span class="vibe-variant">Light</span>
+          </div>
+          <h3>In the Studio</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #e9dccd; --theme-fg: #25399b; --theme-accent: #8e2608;"><i aria-hidden="true"></i>Inspired Vector</li>
+            <li style="--theme-bg: #d9c092; --theme-fg: #013166; --theme-accent: #9a2501;"><i aria-hidden="true"></i>Muse Optimizer</li>
+            <li style="--theme-bg: #ebe0c6; --theme-fg: #024f3e; --theme-accent: #bb2847;"><i aria-hidden="true"></i>Artful RAG</li>
+          </ul>
+        </article>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>09 / 10</span>
+            <span class="vibe-variant">Light</span>
+          </div>
+          <h3>Lost in the Story</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #fbf4e7; --theme-fg: #545401; --theme-accent: #8a3845;"><i aria-hidden="true"></i>Bookish Grammar</li>
+            <li style="--theme-bg: #f1e2c7; --theme-fg: #6d3a02; --theme-accent: #263740;"><i aria-hidden="true"></i>Cozy WordPiece</li>
+            <li style="--theme-bg: #e7d2c6; --theme-fg: #6a2452; --theme-accent: #075333;"><i aria-hidden="true"></i>Spellbound Prompt</li>
+          </ul>
+        </article>
+
+        <article class="vibe-card">
+          <div class="vibe-card-meta">
+            <span>10 / 10</span>
+            <span class="vibe-variant">Light</span>
+          </div>
+          <h3>Kid in a Candy Store</h3>
+          <ul class="theme-samples" aria-label="Sample themes">
+            <li style="--theme-bg: #fff5fa; --theme-fg: #015e4e; --theme-accent: #b61171;"><i aria-hidden="true"></i>Giddy Backprop</li>
+            <li style="--theme-bg: #fee9e6; --theme-fg: #025a15; --theme-accent: #d1173b;"><i aria-hidden="true"></i>Delighted Weights</li>
+            <li style="--theme-bg: #fecde0; --theme-fg: #004373; --theme-accent: #9f15bb;"><i aria-hidden="true"></i>Amazed Batch</li>
+          </ul>
         </article>
       </div>
     </section>
@@ -136,7 +291,7 @@
           <p class="eyebrow">Import into the ChatGPT macOS app</p>
           <h2 id="import-title">From copy to ChatGPT<br>in three steps.</h2>
         </div>
-        <p>Vibe in Color copies the complete theme to your clipboard, ready for ChatGPT’s built-in theme importer.</p>
+        <p>Vibe in Color copies the complete theme as a <code>codex-theme-v1</code> value, ready for ChatGPT’s built-in theme importer.</p>
       </div>
 
       <div class="import-workflow">
@@ -169,23 +324,54 @@
           </li>
         </ol>
       </div>
+
+      <div class="compatibility-note">
+        <span>Compatibility</span>
+        <p><strong>Tested with ChatGPT for macOS 26.715.72359, build 5718.</strong> This check is refreshed with every release because the importer format may evolve.</p>
+      </div>
+    </section>
+
+    <section class="story-section" aria-labelledby="story-title">
+      <div class="story-inner">
+        <p class="eyebrow">Why I made it</p>
+        <div class="story-layout">
+          <h2 id="story-title">I have a<br>condition.</h2>
+          <div class="story-copy">
+            <p>Vibe in Color started as a tool for myself. I digest information better when it is framed in colors that closely reflect my mood and whatever I happen to be doing.</p>
+            <p>It was true with IDEs. With agents, the condition has become impossible to ignore.</p>
+            <p class="story-punchline">In short: my vibes need a color. I’m sharing it freely in case yours do too.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="download-panel" id="download" aria-labelledby="download-title">
       <div>
         <p class="eyebrow eyebrow-on-dark">Version <span data-release-version>0.1.1</span> · Ready to download</p>
         <h2 id="download-title">Give your vibe<br>a color.</h2>
-        <p>Vibe in Color runs entirely on your Mac with no analytics, accounts, or network requests.</p>
+        <p>Vibe in Color is free, Apple-notarized software that runs entirely on your Mac with no analytics, account, or network requests.</p>
       </div>
       <div class="download-actions">
         <a class="button button-dark" href="https://github.com/ulvigu/vibeincolor-downloads/releases/latest/download/Vibe-in-Color.dmg">Download the DMG</a>
         <a href="https://github.com/ulvigu/vibeincolor-downloads/releases/latest/download/SHA256SUMS.txt">Verify checksums</a>
+        <a href="support.html">Support and feedback</a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <span>© 2026 Ulvi Guliyev · <a href="assets/VictorMono-OFL.txt">Font license</a></span>
+  <footer class="site-footer">
+    <div>
+      <span>© 2026 Ulvi Guliyev</span>
+      <nav class="footer-links" aria-label="Product information">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="changelog.html">Changelog</a>
+        <a href="support.html">Support</a>
+        <a href="https://github.com/ulvigu/vibeincolor-downloads/issues/new?template=bug_report.yml">Report a bug</a>
+        <a href="https://github.com/ulvigu/vibeincolor-downloads/issues/new?template=theme_request.yml">Request a theme</a>
+        <a href="assets/VictorMono-OFL.txt">Font license</a>
+      </nav>
+    </div>
     <span>Vibe in Color is an unofficial app and is not affiliated with or endorsed by OpenAI.</span>
   </footer>
 </body>

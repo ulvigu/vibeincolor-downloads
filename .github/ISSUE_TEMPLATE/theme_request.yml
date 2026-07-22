@@ -1,0 +1,43 @@
+name: Theme request
+description: Suggest a new theme or a new direction for an existing vibe.
+title: "[Theme request] "
+labels:
+  - theme request
+body:
+  - type: markdown
+    attributes:
+      value: Describe the vibe first; the color choices should serve it.
+  - type: input
+    id: vibe
+    attributes:
+      label: Vibe
+      description: Name the existing vibe or describe the new vibe you have in mind.
+      placeholder: Burning the Midnight Oil
+    validations:
+      required: true
+  - type: dropdown
+    id: appearance
+    attributes:
+      label: Appearance
+      options:
+        - Light
+        - Dark
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What should this theme feel right for?
+      description: Describe the work, time of day, or situation that calls for this theme.
+    validations:
+      required: true
+  - type: textarea
+    id: colors
+    attributes:
+      label: Colors or references
+      description: Share useful colors, screenshots, references, or combinations to explore.
+  - type: input
+    id: name
+    attributes:
+      label: Optional theme name
+      placeholder: Lamplit Latent
