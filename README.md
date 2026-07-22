@@ -1,8 +1,10 @@
 # Vibe in Color
 
-Vibe in Color is a native macOS app for finding, previewing, and exporting themes for ChatGPT.
+Vibe in Color is a native macOS app for finding, previewing, and exporting themes for the ChatGPT macOS app.
 
-[Download Vibe in Color](https://ulvigu.github.io/vibeincolor-downloads/)
+[Download the DMG](https://github.com/ulvigu/vibeincolor-downloads/releases/latest/download/Vibe-in-Color.dmg) · [Download the ZIP archive](https://github.com/ulvigu/vibeincolor-downloads/releases/latest/download/Vibe-in-Color-macOS.zip) · [Verify SHA-256 checksums](https://github.com/ulvigu/vibeincolor-downloads/releases/latest/download/SHA256SUMS.txt)
+
+[View the Vibe in Color product page](https://ulvigu.github.io/vibeincolor-downloads/)
 
 ## Requirements
 
@@ -11,7 +13,9 @@ Vibe in Color is a native macOS app for finding, previewing, and exporting theme
 
 ## Distribution
 
-This repository contains the public product page and notarized release artifacts. Checksums are published in [`downloads/SHA256SUMS.txt`](downloads/SHA256SUMS.txt).
+GitHub Releases serves the current notarized installers. This repository serves the product page and demo video through GitHub Pages.
+
+The files under `downloads/` are preserved as legacy v0.1.0 fallbacks. Future installer versions belong only in GitHub Releases, using the stable filenames `Vibe-in-Color.dmg`, `Vibe-in-Color-macOS.zip`, and `SHA256SUMS.txt`.
 
 Vibe in Color runs locally with no analytics, accounts, or network requests. See [PRIVACY.md](PRIVACY.md).
 
