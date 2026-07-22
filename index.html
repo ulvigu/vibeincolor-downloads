@@ -67,6 +67,42 @@
         demo.webkitEnterFullscreen();
       }
     });
+
+    const importPreview = document.querySelector("[data-import-preview]");
+    const importLightbox = document.querySelector("[data-import-lightbox]");
+    const lightboxClose = document.querySelector("[data-lightbox-close]");
+
+    const closeLightbox = () => {
+      importLightbox.hidden = true;
+      document.body.classList.remove("lightbox-open");
+      importPreview.setAttribute("aria-expanded", "false");
+      importPreview.focus();
+    };
+
+    importPreview.addEventListener("click", () => {
+      importLightbox.hidden = false;
+      document.body.classList.add("lightbox-open");
+      importPreview.setAttribute("aria-expanded", "true");
+      lightboxClose.focus();
+    });
+    lightboxClose.addEventListener("click", closeLightbox);
+    importLightbox.addEventListener("click", (event) => {
+      if (event.target === importLightbox) {
+        closeLightbox();
+      }
+    });
+    document.addEventListener("keydown", (event) => {
+      if (importLightbox.hidden) {
+        return;
+      }
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeLightbox();
+      } else if (event.key === "Tab") {
+        event.preventDefault();
+        lightboxClose.focus();
+      }
+    });
   </script>
 </head>
 <body>
@@ -299,7 +335,10 @@
 
       <div class="import-workflow">
         <figure class="import-visual">
-          <img src="assets/ChatGPT-theme-import.png" alt="ChatGPT macOS Appearance settings with the Import theme dialog open" width="3456" height="2168" loading="lazy" decoding="async">
+          <button class="import-preview" type="button" data-import-preview aria-haspopup="dialog" aria-controls="import-lightbox" aria-expanded="false" aria-label="View the ChatGPT theme import screenshot full screen">
+            <img src="assets/ChatGPT-theme-import.png" alt="ChatGPT macOS Appearance settings with the Import theme dialog open" width="3456" height="2168" loading="lazy" decoding="async">
+            <span class="import-preview-label" aria-hidden="true">View full screen</span>
+          </button>
           <figcaption>ChatGPT macOS app · Settings → Appearance → Import</figcaption>
         </figure>
 
@@ -377,5 +416,13 @@
     </div>
     <span>Vibe in Color is an unofficial app and is not affiliated with or endorsed by OpenAI.</span>
   </footer>
+
+  <div class="image-lightbox" id="import-lightbox" data-import-lightbox role="dialog" aria-modal="true" aria-labelledby="import-lightbox-title" hidden>
+    <div class="image-lightbox-header">
+      <p id="import-lightbox-title">ChatGPT macOS app · Settings → Appearance → Import</p>
+      <button type="button" data-lightbox-close aria-label="Close full-screen screenshot">Close</button>
+    </div>
+    <img src="assets/ChatGPT-theme-import.png" alt="ChatGPT macOS Appearance settings with the Import theme dialog open" width="3456" height="2168" loading="lazy" decoding="async">
+  </div>
 </body>
 </html>
