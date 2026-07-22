@@ -21,7 +21,7 @@ Vibe in Color runs locally with no analytics, accounts, or network requests. See
 
 ## Support and product information
 
-[Support](https://ulvigu.github.io/vibeincolor-downloads/support.html) · [Report a bug](https://github.com/ulvigu/vibeincolor-downloads/issues/new?template=bug_report.yml) · [Request a theme](https://github.com/ulvigu/vibeincolor-downloads/issues/new?template=theme_request.yml)
+[Support](https://ulvigu.github.io/vibeincolor-downloads/support.html) · [Report a bug](https://github.com/ulvigu/vibeincolor-downloads/issues/new?template=bug_report.yml) · [Request a vibe](https://github.com/ulvigu/vibeincolor-downloads/issues/new?template=vibe_request.yml)
 
 [Privacy](https://ulvigu.github.io/vibeincolor-downloads/privacy.html) · [Terms](https://ulvigu.github.io/vibeincolor-downloads/terms.html) · [Changelog](https://ulvigu.github.io/vibeincolor-downloads/changelog.html)
 

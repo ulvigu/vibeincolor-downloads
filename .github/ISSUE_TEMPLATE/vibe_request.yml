@@ -1,12 +1,12 @@
-name: Theme request
-description: Suggest a new theme or a new direction for an existing vibe.
-title: "[Theme request] "
+name: Vibe request
+description: Suggest a new vibe for the library.
+title: "[Vibe request] "
 labels:
-  - theme request
+  - vibe request
 body:
   - type: markdown
     attributes:
-      value: Describe the vibe first; the color choices should serve it.
+      value: Describe the vibe first; the color choices will follow.
   - type: input
     id: vibe
     attributes:
@@ -27,8 +27,8 @@ body:
   - type: textarea
     id: use_case
     attributes:
-      label: What should this theme feel right for?
-      description: Describe the work, time of day, or situation that calls for this theme.
+      label: What should this vibe feel right for?
+      description: Describe the work, time of day, or situation that calls for this vibe.
     validations:
       required: true
   - type: textarea
@@ -39,5 +39,5 @@ body:
   - type: input
     id: name
     attributes:
-      label: Optional theme name
-      placeholder: Lamplit Latent
+      label: Optional vibe name
+      placeholder: Sunday Reset
