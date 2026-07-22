@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7efe1">
-  <meta name="description" content="Find, preview, and export 200 original themes for ChatGPT with Vibe in Color for macOS.">
+  <meta name="theme-color" content="#f5eddf">
+  <meta name="description" content="Browse, preview, and copy 200 original themes into ChatGPT with Vibe in Color for macOS.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vibe in Color">
   <meta property="og:description" content="Vibes have colors. Find the color that feeds yours.">
@@ -16,13 +16,14 @@
   <title>Vibe in Color — Themes for ChatGPT on macOS</title>
   <link rel="icon" href="assets/VibeInColor.png">
   <link rel="apple-touch-icon" href="assets/VibeInColor.png">
+  <link rel="preload" href="assets/VictorMono-Variable.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script type="module">
-    const version = document.querySelector("[data-release-version]");
+    const versions = document.querySelectorAll("[data-release-version]");
     fetch("release.json", { cache: "no-store" })
       .then((response) => response.ok ? response.json() : Promise.reject())
-      .then((release) => { version.textContent = release.version; })
-      .catch(() => { version.closest(".release-meta").hidden = true; });
+      .then((release) => { versions.forEach((version) => { version.textContent = release.version; }); })
+      .catch(() => { document.querySelector(".release-meta").hidden = true; });
 
     const demo = document.querySelector("#demo-video");
     const fullscreenButton = document.querySelector("[data-fullscreen]");
@@ -43,8 +44,7 @@
       <span>Vibe in Color</span>
     </a>
     <nav aria-label="Primary navigation">
-      <a href="#inside">Inside the app</a>
-      <a href="#demo">Watch demo</a>
+      <a href="#demo">Watch the demo</a>
       <a class="nav-download" href="#download">Download</a>
     </nav>
   </header>
@@ -52,72 +52,87 @@
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span aria-hidden="true"></span>Native macOS theme studio</p>
-        <h1 id="hero-title">Vibes have colors. <em>Find the color that feeds yours.</em></h1>
-        <p class="hero-summary">Explore 200 original themes, preview the details that matter, and export your favorite straight into ChatGPT.</p>
+        <p class="eyebrow">Themes for ChatGPT · Native on macOS</p>
+        <h1 id="hero-title">
+          <span class="hero-title-main">Vibes have<br>colors.</span>
+          <span class="hero-title-accent">Find the color<br>that feeds yours.</span>
+        </h1>
+        <p class="hero-summary">Choose from 200 original light and dark themes, preview them with your own fonts, and copy the one that matches how you want to work into ChatGPT.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="downloads/Vibe-in-Color.dmg">Download for macOS</a>
-          <a class="button button-secondary" href="downloads/Vibe-in-Color-macOS.zip">ZIP archive</a>
+          <a class="button button-secondary" href="downloads/Vibe-in-Color-macOS.zip">Download ZIP</a>
         </div>
         <p class="release-meta">Version <span data-release-version>0.1.0</span> · Apple silicon · macOS 14+</p>
       </div>
 
-      <div class="hero-art" aria-hidden="true">
-        <span class="beam beam-pink"></span>
-        <span class="beam beam-gold"></span>
-        <span class="beam beam-mint"></span>
-        <img class="app-icon" src="assets/VibeInColor.png" alt="">
+      <div class="hero-product">
+        <div class="icon-stage">
+          <img class="app-icon" src="assets/VibeInColor.png" alt="Vibe in Color app icon">
+        </div>
+        <dl class="hero-facts" aria-label="Product details">
+          <div>
+            <dt>200</dt>
+            <dd>original themes</dd>
+          </div>
+          <div>
+            <dt>10</dt>
+            <dd>work vibes</dd>
+          </div>
+          <div>
+            <dt>Light + dark</dt>
+            <dd>every theme</dd>
+          </div>
+        </dl>
       </div>
-    </section>
-
-    <section class="product-stage" id="inside" aria-labelledby="inside-title">
-      <div class="section-heading">
-        <p class="eyebrow"><span aria-hidden="true"></span>Inside the app</p>
-        <h2 id="inside-title">A palette for every kind of momentum.</h2>
-        <p>Move from late-night focus to clean-slate clarity with a library organized around how you want to work.</p>
-      </div>
-      <figure class="app-window">
-        <img src="assets/VibeInColor-screenshot.png" alt="Vibe in Color showing the Burning the Midnight Oil collection">
-      </figure>
     </section>
 
     <section class="demo-section" id="demo" aria-labelledby="demo-title">
-      <div class="demo-heading">
-        <p class="eyebrow"><span aria-hidden="true"></span>See it in motion</p>
-        <h2 id="demo-title">From vibe to ChatGPT theme.</h2>
-        <p>Watch the complete flow, then open the player full screen for a closer look.</p>
-      </div>
-      <div class="demo-frame">
-        <video id="demo-video" controls playsinline preload="metadata" poster="assets/VibeInColor-screenshot.png">
-          <source src="assets/VibeInColor-demo.mp4" type="video/mp4">
-          <a href="assets/VibeInColor-demo.mp4">Watch the full demo video</a>
-        </video>
-        <button type="button" data-fullscreen>View full screen</button>
+      <div class="demo-inner">
+        <div class="demo-heading">
+          <div>
+            <p class="eyebrow eyebrow-on-dark">The complete flow · 32 seconds</p>
+            <h2 id="demo-title">From vibe to<br>ChatGPT theme.</h2>
+          </div>
+          <p>Browse the library, test each theme against real interface and code previews, tune the typography, and copy your choice into ChatGPT.</p>
+        </div>
+        <div class="demo-frame">
+          <video id="demo-video" controls playsinline preload="metadata" poster="assets/VibeInColor-screenshot.png">
+            <source src="assets/VibeInColor-demo.mp4" type="video/mp4">
+            <a href="assets/VibeInColor-demo.mp4">Watch the full demo video</a>
+          </video>
+          <button type="button" data-fullscreen>View full screen</button>
+        </div>
       </div>
     </section>
 
-    <section class="feature-grid" aria-label="Features">
-      <article>
-        <span class="feature-number">01</span>
-        <h3>Find your vibe</h3>
-        <p>Browse ten work vibes or search the full catalog by theme, palette family, light, or dark.</p>
-      </article>
-      <article>
-        <span class="feature-number">02</span>
-        <h3>Preview the details</h3>
-        <p>See prose, code, diffs, and chat surfaces together, with independent interface and code fonts.</p>
-      </article>
-      <article>
-        <span class="feature-number">03</span>
-        <h3>Export to ChatGPT</h3>
-        <p>Copy the complete theme, open ChatGPT Appearance settings, and import it in a few clicks.</p>
-      </article>
+    <section class="feature-section" aria-labelledby="feature-title">
+      <div class="feature-intro">
+        <p class="eyebrow">Designed around your working state</p>
+        <h2 id="feature-title">The right interface can change the energy of the work.</h2>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <span class="feature-number">01 / Browse</span>
+          <h3>Start with a feeling.</h3>
+          <p>Choose one of ten work vibes or search the complete catalog by name, palette, light, or dark.</p>
+        </article>
+        <article>
+          <span class="feature-number">02 / Preview</span>
+          <h3>See the whole system.</h3>
+          <p>Review prose, code, diffs, and chat surfaces together, with your preferred interface and code fonts.</p>
+        </article>
+        <article>
+          <span class="feature-number">03 / Copy</span>
+          <h3>Make it yours.</h3>
+          <p>Copy the complete theme and bring it into ChatGPT Appearance settings in a few clicks.</p>
+        </article>
+      </div>
     </section>
 
     <section class="download-panel" id="download" aria-labelledby="download-title">
       <div>
-        <p class="eyebrow"><span aria-hidden="true"></span>Ready when you are</p>
-        <h2 id="download-title">Give your work a color.</h2>
+        <p class="eyebrow eyebrow-on-dark">Version <span data-release-version>0.1.0</span> · Ready to download</p>
+        <h2 id="download-title">Give your vibe<br>a color.</h2>
         <p>Vibe in Color runs entirely on your Mac with no analytics, accounts, or network requests.</p>
       </div>
       <div class="download-actions">
@@ -128,7 +143,7 @@
   </main>
 
   <footer>
-    <span>© 2026 Ulvi Guliyev</span>
+    <span>© 2026 Ulvi Guliyev · <a href="assets/VictorMono-OFL.txt">Font license</a></span>
     <span>Vibe in Color is an unofficial app and is not affiliated with or endorsed by OpenAI.</span>
   </footer>
 </body>
