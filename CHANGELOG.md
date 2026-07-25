@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0 — 2026-07-25
+
+**Your vibe, your palette.**
+
+### Features
+
+- Create dark or light themes inside any vibe with readable starting palettes.
+- Edit exact background, foreground, and accent hex values, or tune any color with the built-in picker.
+- Rename custom themes, edit their palettes, and delete them directly from the theme row.
+- Restore custom themes, the selected theme, and its vibe across app launches.
+
 ## 0.1.1 — 2026-07-22
 
 **Reliable code-font search.**
