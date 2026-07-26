@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.0 — 2026-07-26
+
+**Typography that follows your theme.**
+
+### Features
+
+- Keep each theme’s interface and code font selections and restore them when switching themes.
+
+### Fixes
+
+- Reveal each theme’s active font when switching themes or typography targets.
+- Keep font scrolling, selection, and Interface/Code switching responsive through a virtualized native list.
+
 ## 0.2.0 — 2026-07-25
 
 **Your vibe, your palette.**

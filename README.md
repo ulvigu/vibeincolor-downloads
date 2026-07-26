@@ -12,6 +12,12 @@ Vibe in Color is a free native macOS app for creating, finding, previewing, and 
 - Enter exact background, foreground, and accent hex values or use the built-in color picker.
 - Rename and edit custom themes, delete them directly from their row, and restore them across launches.
 
+## Per-theme typography
+
+- Keep a separate interface and code font pair for every theme.
+- Restore and reveal both selected fonts when switching themes or typography targets.
+- Scroll and switch between large installed font libraries responsively.
+
 ## Requirements
 
 - Apple silicon (M1 or later)
@@ -31,6 +37,6 @@ Vibe in Color runs locally with no analytics, accounts, or network requests. See
 
 [Privacy](https://ulvigu.github.io/vibeincolor-downloads/privacy.html) · [Terms](https://ulvigu.github.io/vibeincolor-downloads/terms.html) · [Changelog](https://ulvigu.github.io/vibeincolor-downloads/changelog.html)
 
-Version 0.2.0 was tested with ChatGPT for macOS 26.715.72359, build 5718.
+Version 0.3.0 keeps the `codex-theme-v1` import format last tested with ChatGPT for macOS 26.715.72359, build 5718.
 
 ChatGPT is a trademark of OpenAI. Vibe in Color is an unofficial app and is not affiliated with or endorsed by OpenAI.
