@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.3.1 — 2026-07-27
+
+**One hundred new ways into your vibe.**
+
+### Features
+
+- Add ten new research-seeded themes to every vibe, expanding the built-in catalog from 200 to 300 while preserving every original theme.
+- Keep the complete catalog evenly split between 150 light and 150 dark themes.
+
+### Quality
+
+- Qualify all 100 additions for readability, vibe-specific palette constraints, and visual distinctness from the existing catalog and one another.
+
 ## 0.3.0 — 2026-07-26
 
 **Typography that follows your theme.**

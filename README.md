@@ -6,6 +6,11 @@ Vibe in Color is a free native macOS app for creating, finding, previewing, and 
 
 [View the Vibe in Color product page](https://ulvigu.github.io/vibeincolor-downloads/)
 
+## Built-in themes
+
+- Browse 300 themes across ten work vibes, with thirty distinct palettes in each vibe.
+- Choose from a catalog evenly split between 150 light and 150 dark themes.
+
 ## Custom themes
 
 - Create a dark or light theme inside any vibe with readable starting colors.
@@ -37,6 +42,6 @@ Vibe in Color runs locally with no analytics, accounts, or network requests. See
 
 [Privacy](https://ulvigu.github.io/vibeincolor-downloads/privacy.html) · [Terms](https://ulvigu.github.io/vibeincolor-downloads/terms.html) · [Changelog](https://ulvigu.github.io/vibeincolor-downloads/changelog.html)
 
-Version 0.3.0 keeps the `codex-theme-v1` import format last tested with ChatGPT for macOS 26.715.72359, build 5718.
+Version 0.3.1 keeps the `codex-theme-v1` import format last tested with ChatGPT for macOS 26.715.72359, build 5718.
 
 ChatGPT is a trademark of OpenAI. Vibe in Color is an unofficial app and is not affiliated with or endorsed by OpenAI.
