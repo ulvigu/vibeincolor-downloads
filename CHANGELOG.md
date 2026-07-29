@@ -1,5 +1,26 @@
 # Changelog
 
+## Unreleased
+
+## 0.3.2 — 2026-07-29
+
+**Every font. Your colors.**
+
+### Features
+
+- Show every installed font in the code-font picker, including proportional families.
+- Let people keep a below-recommended-contrast palette as a personal theme after an explicit choice.
+- Offer one-click readability adjustment that changes only the color role causing the issue.
+
+### Usability
+
+- Replace contrast jargon with plain-language lighter-or-darker guidance and keep exact ratios under optional details.
+
+### Quality
+
+- Validate the complete `codex-theme-v1` structure for all 300 bundled theme exports and representative custom-theme and font cases.
+- Keep invalid colors and light-or-dark appearance mismatches blocked; personal contrast overrides remain preference-only rather than qualified themes.
+
 ## 0.3.1 — 2026-07-27
 
 **One hundred new ways into your vibe.**

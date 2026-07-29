@@ -42,6 +42,6 @@ Vibe in Color runs locally with no analytics, accounts, or network requests. See
 
 [Privacy](https://ulvigu.github.io/vibeincolor-downloads/privacy.html) · [Terms](https://ulvigu.github.io/vibeincolor-downloads/terms.html) · [Changelog](https://ulvigu.github.io/vibeincolor-downloads/changelog.html)
 
-Version 0.3.1 keeps the `codex-theme-v1` import format last tested with ChatGPT for macOS 26.715.72359, build 5718.
+Version 0.3.2 passed the automated `codex-theme-v1` contract validator for all 300 bundled themes and was maintainer-tested with the latest available ChatGPT for macOS release, version 26.721.41059, build 5848.
 
 ChatGPT is a trademark of OpenAI. Vibe in Color is an unofficial app and is not affiliated with or endorsed by OpenAI.
